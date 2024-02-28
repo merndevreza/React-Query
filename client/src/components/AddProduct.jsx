@@ -30,10 +30,26 @@ const AddProduct = () => {
     e.preventDefault();
     const addedProduct = { ...formState, id: crypto.randomUUID().toString() };
     mutation.mutate(addedProduct);
+    
+    setFormState({
+      title: "",
+      description: "",
+      price: "",
+      rating: 5,
+      thumbnail: "",
+    });
   };
+
+  if (mutation.isLoading) {
+    return <span>Submitting....</span>;
+  }
+  if (mutation.isError) {
+    return <span>An Error Occurred:{mutation.error.message} </span>;
+  }
   return (
     <div className="p-5">
       <h3>Add Product</h3>
+      {mutation.isSuccess && <h3>Product Added Successfully</h3>}
       <form className="space-y-2" onSubmit={(e) => handleAddProduct(e)}>
         <input
           type="text"
