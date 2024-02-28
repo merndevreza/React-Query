@@ -1,5 +1,5 @@
 {
-   "products":[
+  "products": [
     {
       "id": "1",
       "title": "iPhone 9",
@@ -287,6 +287,30 @@
       "price": 3,
       "rating": 5,
       "thumbnail": "test"
+    },
+    {
+      "id": "96c62160-614c-45ed-be9d-e5a71b94e6ae",
+      "title": "Realme ",
+      "description": "Realme Realme Realme Realme Realme ",
+      "price": "23",
+      "rating": 5,
+      "thumbnail": "https://static.realme.net/v2/realme-narzo-50/images/color/2-f4ce5c8df7.png"
+    },
+    {
+      "id": "f5e05ee6-5a84-4087-90cc-70ce59fddada",
+      "title": "Badam",
+      "description": "China Badam",
+      "price": "234",
+      "rating": 5,
+      "thumbnail": "https://static.realme.net/v2/realme-narzo-50/images/color/2-f4ce5c8df7.png"
+    },
+    {
+      "id": "1a4721a4-b734-4c81-8c25-946b5197ea13",
+      "title": "Badam",
+      "description": "China Badam",
+      "price": "234",
+      "rating": 5,
+      "thumbnail": "https://static.realme.net/v2/realme-narzo-50/images/color/2-f4ce5c8df7.png"
     }
   ]
 }
